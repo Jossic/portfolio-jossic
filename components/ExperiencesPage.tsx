@@ -40,7 +40,21 @@ const ExperiencesPage = () => {
 
 export default ExperiencesPage;
 
-const ExperienceCard = ({ title, desc, year, company, companyLink }) => {
+type Experience = {
+	title: string;
+	desc: string;
+	year: string;
+	company: string;
+	companyLink: string;
+};
+
+const ExperienceCard = ({
+	title,
+	desc,
+	year,
+	company,
+	companyLink,
+}: Experience) => {
 	return (
 		<div className='relative experience-card border p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 z-10 mx-4'>
 			<h1 className='absolute -top-10 md:-left-10 md:-top-10 text-4xl text-gray-200 font-bold dark:text-gray-800'>

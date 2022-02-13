@@ -29,7 +29,14 @@ const ProjectsPage = () => {
 
 export default ProjectsPage;
 
-const ProjectCard = ({ title, link, imgUrl, number }) => {
+type Project = {
+	title: string;
+	link: string;
+	imgUrl: string;
+	number: string;
+};
+
+const ProjectCard = ({ title, link, imgUrl, number }: Project) => {
 	return (
 		<a href={link} className='w-full block shadow-2xl'>
 			<div className='relative overflow-hidden'>
