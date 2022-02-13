@@ -1,7 +1,13 @@
+import Container from '@components/layout/Container';
 import { NextPage } from 'next';
+import ContactPage from '@components/ContactPage';
 
 const Contact: NextPage = () => {
-	return <div>Contact</div>;
+	return (
+		<Container>
+			<ContactPage />
+		</Container>
+	);
 };
 
 export default Contact;

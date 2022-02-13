@@ -1,7 +1,11 @@
+import Container from '@components/layout/Container';
+import ProjectsPage from '@components/ProjectsPage';
 import { NextPage } from 'next';
 
-const Projects: NextPage = () => {
-	return <div>Projects</div>;
-};
+const Projects: NextPage = () => (
+	<Container title='Projects - Jossic Lapierre'>
+		<ProjectsPage />
+	</Container>
+);
 
 export default Projects;
