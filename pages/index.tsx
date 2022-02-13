@@ -4,7 +4,7 @@ import LatestCode from '@components/LatestCode';
 import Container from '@components/layout/Container';
 import userData from 'constants/data';
 import getLatestRepos from 'lib/getLatestRepos';
-import type { NextPage } from 'next';
+import type { GetServerSideProps, NextPage } from 'next';
 
 const Home: NextPage = ({ repositories }) => {
 	return (
@@ -25,7 +25,7 @@ export const getServerSideProps = async () => {
 	const token = process.env.GITHUB_AUTH_TOKEN;
 
 	const repositories = await getLatestRepos(userData, token);
-	console.log('REPOSITORIES', repositories);
+	// console.log("REPOSITORIES", repositories);
 
 	return {
 		props: {
