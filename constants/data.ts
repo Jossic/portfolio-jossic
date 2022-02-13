@@ -38,8 +38,15 @@ const userData = {
 	},
 	experience: [
 		{
+			title: 'Mobile Developer',
+			company: 'Freelance',
+			year: '2022',
+			companyLink: 'https://lapi-dev.com',
+			desc: `Creation d'une app mobile pour le suivi sportif`,
+		},
+		{
 			title: 'Fullstack Developer',
-			company: 'WAO',
+			company: 'WAO/Freelance',
 			year: '2021',
 			companyLink: 'https://gites-wao.fr',
 			desc: `Creation de l'application web compléte, API et front, réalisé en NextJs pour l'aspect SEO`,

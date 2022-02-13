@@ -14,7 +14,7 @@ const AboutMe = () => {
 					<p
 						className='leading-loose text-2xl md:text-4xl font-semibold  mx-4'
 						style={{ lineHeight: '3rem' }}>
-						{userData.about.title}. Je travaille sur{' '}
+						{userData.about.title}. Je travaille actuellement sur{' '}
 						<a
 							className='bg-red-500 rounded-md px-2 py-1 text-white'
 							href={userData.about.currentProjectUrl}>
@@ -32,11 +32,12 @@ const AboutMe = () => {
 								Contact
 							</h1>
 							<p className='text-lg text-gray-500 mt-4 dark:text-gray-300'>
-								Pour toutes demandes ou questions, n'hésitez pas
-								à m'écrire par{' '}
+								{`Pour toutes demandes ou questions, n'hésitez pas
+								à m'écrire par`}
 								<a
 									href={`mailto:${userData.email}`}
 									className='text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300'>
+									{' '}
 									mail
 								</a>{' '}
 								et je reviendrais vers vous.
@@ -47,9 +48,9 @@ const AboutMe = () => {
 								Emploi
 							</h1>
 							<p className='text-lg text-gray-500 mt-4 dark:text-gray-300'>
-								Je suis actuellement à la recherche d'une
+								{`Je suis actuellement à la recherche d'une
 								mission ou d'un contrat, vous pouvez consulter
-								mon{' '}
+								mon `}
 								<a
 									href={userData.resumeUrlFR}
 									target='__blank'
