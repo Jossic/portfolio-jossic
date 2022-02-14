@@ -3,12 +3,12 @@ import { RoughNotation } from 'react-rough-notation';
 
 interface Rainbow {
 	color: string;
-	children: React.ReactChild[];
+	children: React.ReactChild;
 }
 
 export const RainbowHighlight = ({ color, children }: Rainbow) => {
 	// Change the animation duration depending on length of text we're animating (speed = distance / time)
-	const animationDuration = Math.floor(30 * children.length);
+	const animationDuration = Math.floor(1000);
 
 	return (
 		<RoughNotation
