@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import userData from 'constants/data';
 
+type Repos = {
+	name: string;
+	description: string;
+	clone_url: string;
+};
+
 type Repo = {
 	latestRepo: {
 		name: string;
@@ -10,11 +16,11 @@ type Repo = {
 };
 
 type Repositories = {
-	repositories: Repo[];
+	repositories: Repos[];
 };
 
 export default function LatestCode({ repositories }: Repositories) {
-	const [repos, setRepos] = useState<Repo[]>([]);
+	const [repos, setRepos] = useState<Repos[]>([]);
 	console.log(`repositories =>`, repositories);
 	useEffect(() => {
 		setRepos(repositories);
@@ -61,17 +67,19 @@ export default function LatestCode({ repositories }: Repositories) {
 	);
 }
 
-const GithubRepoCard = ({ latestRepo }: Repo) => {
+const GithubRepoCard = ({
+	latestRepo: { name, description, clone_url },
+}: Repo) => {
 	return (
 		<div className='github-repo'>
 			<h1 className='font-semibold text-xl dark:text-gray-200 text-gray-700'>
-				{latestRepo.name}
+				{name}
 			</h1>
 			<p className='text-base font-normal my-4 text-gray-500'>
-				{latestRepo.description}
+				{description}
 			</p>
 			<a
-				href={latestRepo.clone_url}
+				href={clone_url}
 				className='font-semibold group flex flex-row space-x-2 w-full items-center'>
 				<p>View Repository </p>
 				<div className='transform  group-hover:translate-x-2 transition duration-300'>
