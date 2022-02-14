@@ -1,7 +1,11 @@
 import axios from 'axios';
+import { UserData } from 'types';
 
-const getLatestRepos = async (data, token) => {
-	// console.log("data", data);
+type Data = {
+	githubUsername: string;
+};
+
+const getLatestRepos = async (data: Data, token: string | undefined) => {
 	try {
 		const username = data.githubUsername;
 
@@ -17,17 +21,17 @@ const getLatestRepos = async (data, token) => {
 					},
 				}
 			);
-			console.log(`res =>`, res);
-			let repos = res.data.items;
-			let latestSixRepos = repos.splice(0, 6);
+			// console.log(`res =>`, res);
+			const repos = res.data.items;
+			const latestSixRepos = repos.splice(0, 6);
 			// console.log("LATEST 6 repos", latestSixRepos);
 			return latestSixRepos;
 		} else {
 			const res = await axios.get(
 				`https://api.github.com/search/repositories?q=user:${username}+sort:author-date-asc`
 			);
-			let repos = res.data.items;
-			let latestSixRepos = repos.splice(0, 6);
+			const repos = res.data.items;
+			const latestSixRepos = repos.splice(0, 6);
 			return latestSixRepos;
 		}
 	} catch (err) {

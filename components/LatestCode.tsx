@@ -4,7 +4,7 @@ import { Repo, Repos, Repositories } from 'types';
 
 export default function LatestCode({ repositories }: Repositories) {
 	const [repos, setRepos] = useState<Repos[]>([]);
-	console.log(`repositories =>`, repositories);
+	// console.log(`repositories =>`, repositories);
 	useEffect(() => {
 		setRepos(repositories);
 	});

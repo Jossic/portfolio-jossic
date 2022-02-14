@@ -24,3 +24,46 @@ export type Repo = {
 export type Repositories = {
 	repositories: Repos[];
 };
+
+export type UserData = {
+	githubUsername: string;
+	name: string;
+	designation: string;
+	avatarUrl: string;
+	email: string;
+	phone: string;
+	address: string;
+	projects: [
+		{
+			title: string;
+			link: string;
+			imgUrl: string;
+			technos: string[];
+			descriptionFront: string[];
+			descriptionBack: string[];
+		}
+	];
+	about: {
+		title: string;
+		description: string[];
+		currentProject: string;
+		currentProjectUrl: string;
+	};
+	experience: [
+		{
+			title: string;
+			company: string;
+			year: string;
+			companyLink: string;
+			desc: string;
+		}
+	];
+	resumeUrlFR: string;
+	resumeUrlEN: string;
+	socialLinks: {
+		twitter: string;
+		linkedin: string;
+		github: string;
+		facebook: string;
+	};
+};

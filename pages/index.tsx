@@ -22,7 +22,7 @@ const Home: NextPage<Repositories> = ({ repositories }) => {
 export default Home;
 
 export const getServerSideProps: GetServerSideProps = async () => {
-	console.log(process.env.GITHUB_AUTH_TOKEN);
+	// console.log(process.env.GITHUB_AUTH_TOKEN);
 	const token = process.env.GITHUB_AUTH_TOKEN;
 
 	const repositories = await getLatestRepos(userData, token);
