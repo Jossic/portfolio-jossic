@@ -4,7 +4,11 @@ import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
 
-const Container = ({ children, ...customMeta }) => {
+interface Contain {
+	children: React.ReactChild;
+}
+
+const Container = ({ children, ...customMeta }: Contain) => {
 	const router = useRouter();
 
 	const meta = {
