@@ -1,4 +1,5 @@
 import userData from 'constants/data';
+import Image from 'next/image';
 import React from 'react';
 
 const AboutMe = () => {
@@ -122,40 +123,72 @@ const AboutMe = () => {
 						</h1>
 
 						<div className='flex flex-row flex-wrap mt-8'>
-							<img
-								src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png'
-								className='h-16 w-16 mx-3 my-3'
-							/>
-							<img
-								src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png'
-								className='h-16 w-16 mx-3 my-3'
-							/>
-							<img
-								src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png'
-								className='h-16 w-16 mx-3 my-3'
-							/>
-							<img
-								src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png'
-								className='h-16 w-16 mx-3 my-3'
-							/>
+							<div className='h-16 w-16 mx-3 my-3'>
+								<Image
+									src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png'
+									alt='icon'
+									height='90'
+									width='90'
+								/>
+							</div>
+							<div className='h-16 w-16 mx-3 my-3'>
+								<Image
+									src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png'
+									alt='icon'
+									height='90'
+									width='90'
+								/>
+							</div>
+							<div className='h-16 w-16 mx-3 my-3'>
+								<Image
+									src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png'
+									alt='icon'
+									height='90'
+									width='90'
+								/>
+							</div>
+							<div className='h-16 w-16 mx-3 my-3'>
+								<Image
+									src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png'
+									alt='icon'
+									height='90'
+									width='90'
+								/>
+							</div>
 
-							<img
-								src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png'
-								className='h-16 w-16 mx-3 my-3'
-							/>
-							<img
-								src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png'
-								className='h-16 w-16 mx-3 my-3'
-							/>
-							<img
-								src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png'
-								className='h-16 w-16 mx-3 my-3'
-							/>
+							<div className='h-16 w-16 mx-3 my-3'>
+								<Image
+									src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png'
+									alt='icon'
+									height='90'
+									width='90'
+								/>
+							</div>
+							<div className='h-16 w-16 mx-3 my-3'>
+								<Image
+									src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png'
+									alt='icon'
+									height='90'
+									width='90'
+								/>
+							</div>
+							<div className='h-16 w-16 mx-3 my-3'>
+								<Image
+									src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png'
+									alt='icon'
+									height='90'
+									width='90'
+								/>
+							</div>
 
-							<img
-								src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png'
-								className='h-16 w-16 mx-3 my-3'
-							/>
+							<div className='h-16 w-16 mx-3 my-3'>
+								<Image
+									src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png'
+									alt='icon'
+									height='90'
+									width='90'
+								/>
+							</div>
 						</div>
 					</div>
 					{/* Text area */}
