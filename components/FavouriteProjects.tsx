@@ -80,7 +80,7 @@ export default function FavouriteProjects() {
 					</a>
 					{/* Single card */}
 					<a
-						href='https://manuarora.in'
+						href='https://lapi-dev.com'
 						className='w-full block col-span-3 sm:col-span-1  object-cover'>
 						<div className='relative overflow-hidden shadow-2xl'>
 							{/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
