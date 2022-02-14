@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { UserData } from 'types';
 
 type Data = {
 	githubUsername: string;
