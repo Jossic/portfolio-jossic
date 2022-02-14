@@ -1,14 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
-import getLatestRepos from 'lib/getLatestRepos';
 import userData from 'constants/data';
 
-export default function LatestCode({ repositories }) {
-	const [repos, setRepos] = useState([]);
+type Repo = {
+	latestRepo: {
+		name: string;
+		description: string;
+		clone_url: string;
+	};
+};
 
-	useEffect(async () => {
+type Repositories = {
+	repositories: Repo[];
+};
+
+export default function LatestCode({ repositories }: Repositories) {
+	const [repos, setRepos] = useState<Repo[]>([]);
+	console.log(`repositories =>`, repositories);
+	useEffect(() => {
 		setRepos(repositories);
-	}, []);
+	});
+
 	return (
 		<section className='bg-[#F1F1F1] -mt-40 dark:bg-gray-900 pb-40'>
 			<div className='max-w-6xl mx-auto'>
@@ -43,14 +54,14 @@ export default function LatestCode({ repositories }) {
 
 				{repos &&
 					repos.map((latestRepo, idx) => (
-						<GithubRepoCard latestRepo={latestRepo} key='idx' />
+						<GithubRepoCard latestRepo={latestRepo} key={idx} />
 					))}
 			</div>
 		</section>
 	);
 }
 
-const GithubRepoCard = ({ latestRepo }) => {
+const GithubRepoCard = ({ latestRepo }: Repo) => {
 	return (
 		<div className='github-repo'>
 			<h1 className='font-semibold text-xl dark:text-gray-200 text-gray-700'>
