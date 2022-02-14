@@ -1,19 +1,16 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
+import { ContainMeta } from 'types';
 import Footer from './Footer';
 import Header from './Header';
 
-interface Contain {
-	children: React.ReactChild;
-}
-
-const Container = ({ children, ...customMeta }: Contain) => {
+const Container = ({ children, ...customMeta }: ContainMeta) => {
 	const router = useRouter();
 
-	const meta = {
+	const meta: ContainMeta = {
 		title: 'Jossic Lapierre - Fullstack JS Developer',
-		description: `I've been developing websites for 2 years straight. Get in touch with me to know more.`,
+		description: `Je code quotidiennement depuis presque un an et demi.`,
 		image: '/avatar.jpg',
 		type: 'website',
 		...customMeta,

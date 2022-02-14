@@ -5,12 +5,13 @@ import Container from '@components/layout/Container';
 import userData from 'constants/data';
 import getLatestRepos from 'lib/getLatestRepos';
 import type { GetServerSideProps, NextPage } from 'next';
+import { Repositories } from 'types';
 
-const Home: NextPage = ({ repositories }) => {
+const Home: NextPage<Repositories> = ({ repositories }) => {
 	return (
 		<Container
 			title='Jossic - Fullstack JS Developer'
-			description='This is a template built specifically for my blog - Creating a developer portfolio that gets you a job.'>
+			description='Ce portfolio permet de me présenter moi, mes projets et mes expériences.'>
 			<Hero />
 			<FavouriteProjects />
 			<LatestCode repositories={repositories} />

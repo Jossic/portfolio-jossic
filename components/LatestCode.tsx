@@ -1,23 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import userData from 'constants/data';
-
-type Repos = {
-	name: string;
-	description: string;
-	clone_url: string;
-};
-
-type Repo = {
-	latestRepo: {
-		name: string;
-		description: string;
-		clone_url: string;
-	};
-};
-
-type Repositories = {
-	repositories: Repos[];
-};
+import { Repo, Repos, Repositories } from 'types';
 
 export default function LatestCode({ repositories }: Repositories) {
 	const [repos, setRepos] = useState<Repos[]>([]);
