@@ -1,5 +1,7 @@
+import React, { ReactElement } from 'react';
+
 export interface ContainMeta {
-	children?: React.ReactChild[];
+	children?: React.ReactChild[] | ReactElement;
 	title?: string;
 	description?: string;
 	image?: string;
