@@ -26,7 +26,7 @@ export default function FavouriteProjects() {
 									d='M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z'
 								/>
 							</svg>
-							<p>View all</p>
+							<p>Tout voir</p>
 						</a>
 					</Link>
 				</header>
@@ -35,12 +35,12 @@ export default function FavouriteProjects() {
 				<div className='grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40'>
 					{/* Single card */}
 					<a
-						href='https://tailwindmasterkit.com'
+						href='https://gites-wao.fr'
 						className='w-full block col-span-3 shadow-2xl'>
 						<div className='relative overflow-hidden'>
 							<div className='transform hover:scale-125 transition duration-2000 ease-out'>
 								<Image
-									src='/tmk.jpg'
+									src='/backoffice.png'
 									alt='portfolio'
 									height='600'
 									width='1200'
@@ -57,13 +57,13 @@ export default function FavouriteProjects() {
 					</a>
 					{/* Single card */}
 					<a
-						href='https://placeholdertech.in'
+						href=''
 						className='w-full block col-span-3  sm:col-span-2 shadow-2xl'>
 						<div className='relative overflow-hidden'>
 							{/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
 							<div className='transform hover:scale-125 transition duration-2000 ease-out'>
 								<Image
-									src='/placeholdertech.png'
+									src='/backoffice.png'
 									alt='portfolio'
 									height='356'
 									width='746'
@@ -71,7 +71,7 @@ export default function FavouriteProjects() {
 								/>
 							</div>
 							<h1 className='absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2'>
-								PlaceholderTech
+								Projet 2
 							</h1>
 							<h1 className='absolute bottom-10 left-10 text-gray-50 font-bold text-xl'>
 								02
@@ -86,14 +86,14 @@ export default function FavouriteProjects() {
 							{/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
 							<div className='transform hover:scale-125 transition duration-2000 ease-out object-cover shadow-2xl'></div>
 							<Image
-								src='/portfolio.png'
+								src='/backoffice.png'
 								alt='portfolio'
 								height='251'
 								width='357'
 								layout='responsive'
 							/>
 							<h1 className='absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2'>
-								Portfolio
+								Projet 3
 							</h1>
 							<h1 className='absolute bottom-10 left-10 text-gray-50 font-bold text-xl'>
 								03
