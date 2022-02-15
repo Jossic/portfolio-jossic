@@ -28,11 +28,79 @@ const userData = {
 				'/nodejs.png',
 				'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png',
 			],
-			descriptionFront: [
-				{ title: `Build an app`, description: ``, image: `` },
-			],
+			descriptionFront: {
+				title: `Front app: Site vitrine et back office pour une app de gestion locative`,
+				description: [
+					{
+						image: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+						text: `Construire une application entière avec Next.js et Material-ui.`,
+					},
+					{
+						image: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+						text: `Une partie vitrine => Présentation des gites, contacts, devis, réservation, FAQ, alentours.`,
+					},
+					{
+						image: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+						text: `Une partie back-office (pour l’admin) => Permet la gestion des réservations, facturations, messages, mails
+						automatiques, utilisateurs, clients, statistiques.`,
+					},
+					{
+						image: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+						text: `Permettre à l’admin de changer les images, fichiers et certains textes du site`,
+					},
+					{
+						image: ``,
+						text: `Permettre au client de payer via PayPal`,
+					},
+					{
+						image: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+						text: `Notifications en temps réel (socket.io)`,
+					},
+					{
+						image: ``,
+						text: `Création de mail personnalisés intégrant des variables.`,
+					},
+				],
+			},
+
 			descriptionBack: [
-				{ title: `Build an app`, description: ``, image: `` },
+				{
+					title: `API app`,
+					description: [
+						{
+							image: ``,
+							text: `Construire une API complète, avec Express / Mongo DB.`,
+						},
+						{
+							image: ``,
+							text: `Construction des modèles en fonction des besoins du projet.`,
+						},
+						{
+							image: ``,
+							text: `Échanges en temps réels entre le serveur et le client avec Mongo DB change Stream et socket.io`,
+						},
+						{
+							image: ``,
+							text: `Gestion automatique de taches (node-cron).`,
+						},
+						{
+							image: ``,
+							text: `Création d’un script pour importer l’ancienne base de données MySQL.`,
+						},
+						{
+							image: ``,
+							text: `Création de PDF (contrats et factures).`,
+						},
+						{
+							image: ``,
+							text: `Stockage des fichiers et images sur Amazon S3`,
+						},
+						{
+							image: ``,
+							text: `Construction de l’algorithme permettant le calcul des tarif spécifiques`,
+						},
+					],
+				},
 			],
 		},
 		{

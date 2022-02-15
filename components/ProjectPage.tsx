@@ -1,14 +1,8 @@
-import userData, { images } from 'constants/data';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import React from 'react';
-// import { Project } from 'types';
+import { Project } from 'types';
 
-const ProjectPage = () => {
-	const router = useRouter();
-	const project = userData.projects.filter(
-		(proj) => proj.slug === router.query.slug
-	);
+const ProjectPage = ({ project }: Project) => {
 	const {
 		title,
 		description,
@@ -16,7 +10,7 @@ const ProjectPage = () => {
 		technos,
 		descriptionBack,
 		descriptionFront,
-	} = project[0];
+	} = project;
 	return (
 		<section className='bg-white dark:bg-gray-800'>
 			<div className='max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800'>
@@ -31,7 +25,7 @@ const ProjectPage = () => {
 						Les technos
 					</h2>
 					<div className='flex flex-1 flex-row flex-wrap mt-8'>
-						{technos.map((tech, index) => (
+						{technos?.map((tech, index) => (
 							<div className='h-16 w-16 mx-3 my-3' key={index}>
 								<Image
 									src={tech}
@@ -41,8 +35,58 @@ const ProjectPage = () => {
 								/>
 							</div>
 						))}
-						{description}
-						{type}
+					</div>
+					<h2 className='text-3xl my-10 md:text-4xl font-bold text-center md:text-left'>
+						Descriptif
+					</h2>
+					<p className='italic'>{description}</p>
+					<div>
+						<h3 className='text-2xl my-10 md:text-2xl font-bold md:text-left'>
+							{descriptionFront?.title}
+						</h3>
+						{descriptionFront?.description?.map((desc, index) => (
+							<div
+								key={index}
+								className='flex items-center border-gray-200 border-2 rounded-lg my-8 shadow-lg hover:scale-105 duration-300 ease-in '>
+								<div className='w-1/2 mx-3 my-3'>
+									{desc.image && (
+										<Image
+											src={desc.image}
+											alt={`capture${index}`}
+											height='300'
+											width='400'
+										/>
+									)}
+								</div>
+								<div className='w-1/2 mx-3 my-3'>
+									{desc.text}
+								</div>
+							</div>
+						))}
+					</div>
+					<div>
+						<h3 className='text-2xl my-10 md:text-2xl font-bold md:text-left'>
+							{descriptionBack?.title}
+						</h3>
+						{descriptionBack?.description?.map((desc, index) => (
+							<div
+								key={index}
+								className='flex items-center border-gray-200 border-2 rounded-lg my-8 shadow-lg hover:scale-105 duration-300 ease-in '>
+								<div className='w-1/2 mx-3 my-3'>
+									{desc.image && (
+										<Image
+											src={desc.image}
+											alt={`capture${index}`}
+											height='300'
+											width='400'
+										/>
+									)}
+								</div>
+								<div className='w-1/2 mx-3 my-3'>
+									{desc.text}
+								</div>
+							</div>
+						))}
 					</div>
 				</div>
 			</div>

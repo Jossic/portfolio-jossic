@@ -79,7 +79,23 @@ export type Project = {
 		link: string;
 		imgUrl?: string;
 		technos?: string[];
-		descriptionFront?: string[];
-		descriptionBack?: string[];
+		descriptionFront?: {
+			title: string;
+			description: [
+				{
+					image: string;
+					text: string;
+				}
+			];
+		};
+		descriptionBack?: {
+			title: string;
+			description: [
+				{
+					image: string;
+					text: string;
+				}
+			];
+		};
 	};
 };
