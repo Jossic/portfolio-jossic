@@ -2,7 +2,7 @@ import Container from '@components/layout/Container';
 import { NextPage } from 'next';
 import ContactPage from '@components/ContactPage';
 
-const Contact: NextPage = () => {
+const contact: NextPage = () => {
 	return (
 		<Container>
 			<ContactPage />
@@ -10,4 +10,4 @@ const Contact: NextPage = () => {
 	);
 };
 
-export default Contact;
+export default contact;

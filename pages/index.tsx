@@ -11,7 +11,7 @@ const Home: NextPage<Repositories> = ({ repositories }) => {
 	return (
 		<Container
 			title='Jossic - Fullstack JS Developer'
-			description='Ce portfolio permet de me présenter moi, mes projets et mes expériences.'>
+			description='Ancien comptable reconverti. Je me suis pris de passion pour le code que je pratique au quotidien afin de progresser toujours plus. Ce portfolio permet de me présenter moi, mes projets et mes expériences.'>
 			<Hero />
 			<FavouriteProjects />
 			<LatestCode repositories={repositories} />

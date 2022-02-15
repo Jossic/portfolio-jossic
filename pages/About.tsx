@@ -2,7 +2,7 @@ import AboutMe from '@components/AboutMe';
 import Container from '@components/layout/Container';
 import { NextPage } from 'next';
 
-const About: NextPage = () => {
+const about: NextPage = () => {
 	return (
 		<Container>
 			<AboutMe />
@@ -10,4 +10,4 @@ const About: NextPage = () => {
 	);
 };
 
-export default About;
+export default about;

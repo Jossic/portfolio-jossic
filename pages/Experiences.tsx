@@ -2,7 +2,7 @@ import ExperiencesPage from '@components/ExperiencesPage';
 import Container from '@components/layout/Container';
 import { NextPage } from 'next';
 
-const Experiences: NextPage = () => {
+const experiences: NextPage = () => {
 	return (
 		<Container>
 			<ExperiencesPage />
@@ -10,4 +10,4 @@ const Experiences: NextPage = () => {
 	);
 };
 
-export default Experiences;
+export default experiences;
