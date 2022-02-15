@@ -32,10 +32,10 @@ const Header = () => {
 
 				<div className='space-x-8 hidden md:block'>
 					<div className='flex gap-7'>
-						<Link href='/about'>
+						<Link href='/About'>
 							<a
 								className={`text-base group ${
-									router.asPath === '/about'
+									router.asPath === '/About'
 										? 'text-gray-800 font-bold dark:text-gray-400'
 										: 'text-gray-600 dark:text-gray-300 font-normal'
 								}`}>
@@ -58,10 +58,10 @@ const Header = () => {
 								</p>
 							</a>
 						</Link>
-						<Link href='/experiences'>
+						<Link href='/Experiences'>
 							<a
 								className={`text-base group ${
-									router.asPath === '/experiences'
+									router.asPath === '/Experiences'
 										? 'text-gray-800 font-bold dark:text-gray-400'
 										: 'text-gray-600 dark:text-gray-300 font-normal '
 								}`}>
@@ -71,10 +71,10 @@ const Header = () => {
 								</p>
 							</a>
 						</Link>
-						<Link href='/contact'>
+						<Link href='/Contact'>
 							<a
 								className={`text-base group ${
-									router.asPath === '/contact'
+									router.asPath === '/Contact'
 										? 'text-gray-800 font-bold dark:text-gray-400'
 										: 'text-gray-600 dark:text-gray-300 font-normal '
 								}`}>
@@ -149,7 +149,7 @@ const Header = () => {
 				</div>
 			</div>
 			<div className='space-x-8 block md:hidden mt-4'>
-				<Link href='/about'>
+				<Link href='/About'>
 					<a className='text-base font-normal text-gray-600 dark:text-gray-300'>
 						About
 					</a>
@@ -159,12 +159,12 @@ const Header = () => {
 						Projects
 					</a>
 				</Link>
-				<Link href='/experiences'>
+				<Link href='/Experiences'>
 					<a className='text-base font-normal text-gray-600 dark:text-gray-300'>
-						Experience
+						Experiences
 					</a>
 				</Link>
-				<Link href='/contact'>
+				<Link href='/Contact'>
 					<a className='text-base font-normal text-gray-600 dark:text-gray-300'>
 						Contact
 					</a>
