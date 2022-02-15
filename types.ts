@@ -81,21 +81,16 @@ export type Project = {
 		technos?: string[];
 		descriptionFront?: {
 			title: string;
-			description: [
-				{
-					image: string;
-					text: string;
-				}
-			];
+			description: Description[];
 		};
 		descriptionBack?: {
 			title: string;
-			description: [
-				{
-					image: string;
-					text: string;
-				}
-			];
+			description: Description[];
 		};
 	};
+};
+
+type Description = {
+	image: string;
+	text: string;
 };

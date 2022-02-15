@@ -5,6 +5,8 @@
 // MONGO: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png
 // NEXT: /nextjs.png
 // Node: /nodejs.png
+// React N : /react-native.svg
+// Redux : /redux.svg
 
 const userData = {
 	githubUsername: 'Jossic',
@@ -21,7 +23,7 @@ const userData = {
 			description: `Réalisation d'un app fullstack`,
 			type: `Web App`,
 			link: `/projects/gites-wao`,
-			imgUrl: '/tmk.jpg',
+			imgUrl: '/backoffice.png',
 			technos: [
 				`https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
 				'/nextjs.png',
@@ -32,96 +34,105 @@ const userData = {
 				title: `Front app: Site vitrine et back office pour une app de gestion locative`,
 				description: [
 					{
-						image: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+						image: ``,
 						text: `Construire une application entière avec Next.js et Material-ui.`,
 					},
 					{
-						image: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+						image: ``,
 						text: `Une partie vitrine => Présentation des gites, contacts, devis, réservation, FAQ, alentours.`,
 					},
 					{
-						image: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+						image: `/backoffice.png`,
 						text: `Une partie back-office (pour l’admin) => Permet la gestion des réservations, facturations, messages, mails
 						automatiques, utilisateurs, clients, statistiques.`,
 					},
 					{
-						image: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+						image: `/backoffice-cgh-img.png`,
 						text: `Permettre à l’admin de changer les images, fichiers et certains textes du site`,
 					},
 					{
-						image: ``,
+						image: `/page-paiement.png`,
 						text: `Permettre au client de payer via PayPal`,
 					},
 					{
-						image: `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+						image: `/notif.png`,
 						text: `Notifications en temps réel (socket.io)`,
 					},
 					{
-						image: ``,
+						image: `/mailer.png`,
 						text: `Création de mail personnalisés intégrant des variables.`,
 					},
 				],
 			},
-
-			descriptionBack: [
-				{
-					title: `API app`,
-					description: [
-						{
-							image: ``,
-							text: `Construire une API complète, avec Express / Mongo DB.`,
-						},
-						{
-							image: ``,
-							text: `Construction des modèles en fonction des besoins du projet.`,
-						},
-						{
-							image: ``,
-							text: `Échanges en temps réels entre le serveur et le client avec Mongo DB change Stream et socket.io`,
-						},
-						{
-							image: ``,
-							text: `Gestion automatique de taches (node-cron).`,
-						},
-						{
-							image: ``,
-							text: `Création d’un script pour importer l’ancienne base de données MySQL.`,
-						},
-						{
-							image: ``,
-							text: `Création de PDF (contrats et factures).`,
-						},
-						{
-							image: ``,
-							text: `Stockage des fichiers et images sur Amazon S3`,
-						},
-						{
-							image: ``,
-							text: `Construction de l’algorithme permettant le calcul des tarif spécifiques`,
-						},
-					],
-				},
-			],
+			descriptionBack: {
+				title: `API app`,
+				description: [
+					{
+						image: ``,
+						text: `Construire une API complète, avec Express / Mongo DB.`,
+					},
+					{
+						image: ``,
+						text: `Construction des modèles en fonction des besoins du projet.`,
+					},
+					{
+						image: ``,
+						text: `Échanges en temps réels entre le serveur et le client avec Mongo DB change Stream et socket.io`,
+					},
+					{
+						image: ``,
+						text: `Gestion automatique de taches (node-cron).`,
+					},
+					{
+						image: ``,
+						text: `Création d’un script pour importer l’ancienne base de données MySQL.`,
+					},
+					{
+						image: ``,
+						text: `Création de PDF (contrats et factures).`,
+					},
+					{
+						image: ``,
+						text: `Stockage des fichiers et images sur Amazon S3`,
+					},
+					{
+						image: ``,
+						text: `Construction de l’algorithme permettant le calcul des tarif spécifiques`,
+					},
+				],
+			},
 		},
 		{
 			title: 'Reminder App',
 			slug: 'reminder',
-			description: ``,
+			description: `Il s'agit d'une app de prise de note liées à des projets mise en place via un cours sur React Native`,
 			type: `Mobile App`,
 			link: `/projects/reminder`,
 			imgUrl: '/placeholdertech.png',
 			technos: [
 				`https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
-				'React-Native',
-				'Firebase',
-				'Redux',
+				'/react-native.svg',
+				'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png',
+				'/redux.svg',
 			],
-			descriptionFront: [
-				{ title: `Build an app`, description: ``, image: `` },
-			],
-			descriptionBack: [
-				{ title: `Build an app`, description: ``, image: `` },
-			],
+			descriptionFront: {
+				title: `Fontend : Création d'une app React Native (Expo) permettant la gestion des notes avec la possibilité d'ajouter des images`,
+				description: [
+					{
+						image: ``,
+						text: `Construire une application entière avec Next.js et Material-ui.`,
+					},
+				],
+			},
+			descriptionBack: {
+				title: `Backend : La gestion du backend se fait via Firebase, ainsi que le système d'authentification`,
+				description: [
+					{
+						image: ``,
+						text: `Connecter l'appli au backend de Firebase.`,
+					},
+				],
+			},
 		},
 		{
 			title: 'Juste Prix App',
@@ -136,17 +147,29 @@ const userData = {
 				'Firebase',
 				'Redux',
 			],
-			descriptionFront: [
-				{ title: `Build an app`, description: ``, image: `` },
-			],
-			descriptionBack: [
-				{ title: `Build an app`, description: ``, image: `` },
-			],
+			descriptionFront: {
+				title: `Front app: Site vitrine et back office pour une app de gestion locative`,
+				description: [
+					{
+						image: ``,
+						text: `Construire une application entière avec Next.js et Material-ui.`,
+					},
+				],
+			},
+			descriptionBack: {
+				title: `API app`,
+				description: [
+					{
+						image: ``,
+						text: `Construire une API complète, avec Express / Mongo DB.`,
+					},
+				],
+			},
 		},
 		{
 			title: 'Simple-Workout App',
 			slug: 'simple-workout',
-			description: ``,
+			description: `Il s'agit d'un projet personnel que je mets en place afin de suivre mon activité sportive (Cardio, musculation, divers exercices), Cette application est faite en React Native et est connectée à un backend Firebase`,
 			type: `Mobile App`,
 			link: `/projects/simple-workout`,
 			imgUrl: '/placeholdertech.png',
@@ -156,12 +179,32 @@ const userData = {
 				'Firebase',
 				'Redux',
 			],
-			descriptionFront: [
-				{ title: `Build an app`, description: ``, image: `` },
-			],
-			descriptionBack: [
-				{ title: `Build an app`, description: ``, image: `` },
-			],
+			descriptionFront: {
+				title: `Front app: App mobile de gestion d'activité sportive ainsi qui le suivi du poids`,
+				description: [
+					{
+						image: ``,
+						text: `Construction de l'architecture de l'application, de la structure des données et des fonctionnalités. Construction également de maquettes légères pour la réalisation de l'application`,
+					},
+					{
+						image: ``,
+						text: `Construction de l'application mobile avec le framework Tailwind CSS.`,
+					},
+				],
+			},
+			descriptionBack: {
+				title: `API app`,
+				description: [
+					{
+						image: ``,
+						text: `Construction .`,
+					},
+					{
+						image: ``,
+						text: `Construire une application entière avec Next.js et Material-ui.`,
+					},
+				],
+			},
 		},
 		{
 			title: 'MERN Blog',
@@ -175,12 +218,24 @@ const userData = {
 				'NextJS',
 				'Typescript',
 			],
-			descriptionFront: [
-				{ title: `Build an app`, description: ``, image: `` },
-			],
-			descriptionBack: [
-				{ title: `Build an app`, description: ``, image: `` },
-			],
+			descriptionFront: {
+				title: `Front app: Site vitrine et back office pour une app de gestion locative`,
+				description: [
+					{
+						image: `/mailer.png`,
+						text: `Création de mail personnalisés intégrant des variables.`,
+					},
+				],
+			},
+			descriptionBack: {
+				title: `API app`,
+				description: [
+					{
+						image: ``,
+						text: `Construire une API complète, avec Express / Mongo DB.`,
+					},
+				],
+			},
 		},
 		{
 			title: 'MERN Ecom',
@@ -196,12 +251,24 @@ const userData = {
 				'Redux',
 				'NodeJS',
 			],
-			descriptionFront: [
-				{ title: `Build an app`, description: ``, image: `` },
-			],
-			descriptionBack: [
-				{ title: `Build an app`, description: ``, image: `` },
-			],
+			descriptionFront: {
+				title: `Front app: Site vitrine et back office pour une app de gestion locative`,
+				description: [
+					{
+						image: ``,
+						text: `Construire une application entière avec Next.js et Material-ui.`,
+					},
+				],
+			},
+			descriptionBack: {
+				title: `API app`,
+				description: [
+					{
+						image: ``,
+						text: `Construire une API complète, avec Express / Mongo DB.`,
+					},
+				],
+			},
 		},
 		{
 			title: 'Taskify',
@@ -215,12 +282,24 @@ const userData = {
 				'ReactJS',
 				'Typescript',
 			],
-			descriptionFront: [
-				{ title: `Build an app`, description: ``, image: `` },
-			],
-			descriptionBack: [
-				{ title: `Build an app`, description: ``, image: `` },
-			],
+			descriptionFront: {
+				title: `Front app: Site vitrine et back office pour une app de gestion locative`,
+				description: [
+					{
+						image: ``,
+						text: `Construire une application entière avec Next.js et Material-ui.`,
+					},
+				],
+			},
+			descriptionBack: {
+				title: `API app`,
+				description: [
+					{
+						image: ``,
+						text: `Construire une API complète, avec Express / Mongo DB.`,
+					},
+				],
+			},
 		},
 		{
 			title: 'DevConnector',
@@ -234,12 +313,24 @@ const userData = {
 				'ReactJS',
 				'NodeJS',
 			],
-			descriptionFront: [
-				{ title: `Build an app`, description: ``, image: `` },
-			],
-			descriptionBack: [
-				{ title: `Build an app`, description: ``, image: `` },
-			],
+			descriptionFront: {
+				title: `Front app: Site vitrine et back office pour une app de gestion locative`,
+				description: [
+					{
+						image: ``,
+						text: `Construire une application entière avec Next.js et Material-ui.`,
+					},
+				],
+			},
+			descriptionBack: {
+				title: `API app`,
+				description: [
+					{
+						image: ``,
+						text: `Construire une API complète, avec Express / Mongo DB.`,
+					},
+				],
+			},
 		},
 	],
 	about: {

@@ -48,17 +48,21 @@ const ProjectPage = ({ project }: Project) => {
 							<div
 								key={index}
 								className='flex items-center border-gray-200 border-2 rounded-lg my-8 shadow-lg hover:scale-105 duration-300 ease-in '>
-								<div className='w-1/2 mx-3 my-3'>
-									{desc.image && (
+								{desc.image && (
+									<div className='w-2/5 mx-3 my-3'>
 										<Image
 											src={desc.image}
 											alt={`capture${index}`}
 											height='300'
 											width='400'
+											layout='responsive'
 										/>
-									)}
-								</div>
-								<div className='w-1/2 mx-3 my-3'>
+									</div>
+								)}
+								<div
+									className={`${
+										desc.image ? 'w-3/5' : 'w-full'
+									} mx-3 my-3`}>
 									{desc.text}
 								</div>
 							</div>
@@ -72,17 +76,20 @@ const ProjectPage = ({ project }: Project) => {
 							<div
 								key={index}
 								className='flex items-center border-gray-200 border-2 rounded-lg my-8 shadow-lg hover:scale-105 duration-300 ease-in '>
-								<div className='w-1/2 mx-3 my-3'>
-									{desc.image && (
+								{desc.image && (
+									<div className='w-2/5 mx-3 my-3'>
 										<Image
 											src={desc.image}
 											alt={`capture${index}`}
 											height='300'
 											width='400'
 										/>
-									)}
-								</div>
-								<div className='w-1/2 mx-3 my-3'>
+									</div>
+								)}
+								<div
+									className={`${
+										desc.image ? 'w-3/5' : 'w-full'
+									} mx-3 my-3`}>
 									{desc.text}
 								</div>
 							</div>
