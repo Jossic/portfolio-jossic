@@ -1,3 +1,11 @@
+// JS : https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png
+// TS: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png
+// REACT: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png
+// FIREBASE: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png
+// MONGO: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png
+// NEXT: /nextjs.png
+// Node: /nodejs.png
+
 const userData = {
 	githubUsername: 'Jossic',
 	name: 'Jossic Lapierre',
@@ -9,17 +17,161 @@ const userData = {
 	projects: [
 		{
 			title: 'Les gîtes WAO',
-			link: 'https://tailwindmasterkit.com',
+			slug: 'gites-wao',
+			description: `Réalisation d'un app fullstack`,
+			type: `Web App`,
+			link: `/projects/gites-wao`,
 			imgUrl: '/tmk.jpg',
-			technos: ['NextJs', 'NodeJs'],
-			descriptionFront: [`Build an app`],
-			descriptionBack: [`Build an API from scratch`],
+			technos: [
+				`https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+				'/nextjs.png',
+				'NodeJs',
+				'MongoDB',
+			],
+			descriptionFront: [
+				{ title: `Build an app`, description: ``, image: `` },
+			],
+			descriptionBack: [
+				{ title: `Build an app`, description: ``, image: `` },
+			],
 		},
 		{
 			title: 'Reminder App',
-			link: 'https://placeholdertech.in',
+			slug: 'reminder',
+			description: ``,
+			type: `Mobile App`,
+			link: `/projects/reminder`,
 			imgUrl: '/placeholdertech.png',
-			technos: ['React-Native', 'Firebase'],
+			technos: [
+				`https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+				'React-Native',
+				'Firebase',
+				'Redux',
+			],
+			descriptionFront: [
+				{ title: `Build an app`, description: ``, image: `` },
+			],
+			descriptionBack: [
+				{ title: `Build an app`, description: ``, image: `` },
+			],
+		},
+		{
+			title: 'Juste Prix App',
+			slug: 'juste-prix',
+			description: ``,
+			type: `Mobile App`,
+			link: `/projects/juste-prix`,
+			imgUrl: '/placeholdertech.png',
+			technos: [
+				`https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+				'React-Native',
+				'Firebase',
+				'Redux',
+			],
+			descriptionFront: [
+				{ title: `Build an app`, description: ``, image: `` },
+			],
+			descriptionBack: [
+				{ title: `Build an app`, description: ``, image: `` },
+			],
+		},
+		{
+			title: 'Simple-Workout App',
+			slug: 'simple-workout',
+			description: ``,
+			type: `Mobile App`,
+			link: `/projects/simple-workout`,
+			imgUrl: '/placeholdertech.png',
+			technos: [
+				`https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+				'React-Native',
+				'Firebase',
+				'Redux',
+			],
+			descriptionFront: [
+				{ title: `Build an app`, description: ``, image: `` },
+			],
+			descriptionBack: [
+				{ title: `Build an app`, description: ``, image: `` },
+			],
+		},
+		{
+			title: 'MERN Blog',
+			slug: 'mern-blog',
+			description: ``,
+			type: `Web App`,
+			link: `/projects/mern-blog`,
+			imgUrl: '/placeholdertech.png',
+			technos: [
+				`https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+				'NextJS',
+				'Typescript',
+			],
+			descriptionFront: [
+				{ title: `Build an app`, description: ``, image: `` },
+			],
+			descriptionBack: [
+				{ title: `Build an app`, description: ``, image: `` },
+			],
+		},
+		{
+			title: 'MERN Ecom',
+			slug: 'mern-ecom',
+			description: ``,
+			type: `Web App`,
+			link: '/projects/mern-ecom',
+			imgUrl: '/tmk.jpg',
+			technos: [
+				`https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+				'ReactJS',
+				'NodeJs',
+				'Redux',
+				'NodeJS',
+			],
+			descriptionFront: [
+				{ title: `Build an app`, description: ``, image: `` },
+			],
+			descriptionBack: [
+				{ title: `Build an app`, description: ``, image: `` },
+			],
+		},
+		{
+			title: 'Taskify',
+			slug: 'taskify',
+			description: ``,
+			type: `Web App`,
+			link: `/projects/taskify`,
+			imgUrl: '/placeholdertech.png',
+			technos: [
+				`https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+				'ReactJS',
+				'Typescript',
+			],
+			descriptionFront: [
+				{ title: `Build an app`, description: ``, image: `` },
+			],
+			descriptionBack: [
+				{ title: `Build an app`, description: ``, image: `` },
+			],
+		},
+		{
+			title: 'DevConnector',
+			slug: 'devconnector',
+			description: ``,
+			type: `Web App`,
+			link: `/projects/devconnector`,
+			imgUrl: '/placeholdertech.png',
+			technos: [
+				`https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
+				'ReactJS',
+				'NodeJS',
+			],
+			descriptionFront: [
+				{ title: `Build an app`, description: ``, image: `` },
+			],
+			descriptionBack: [
+				{ title: `Build an app`, description: ``, image: `` },
+			],
 		},
 	],
 	about: {
@@ -39,6 +191,7 @@ const userData = {
 	experience: [
 		{
 			title: 'Mobile Developer',
+			slug: '',
 			company: 'Freelance',
 			year: '2022',
 			companyLink: 'https://lapi-dev.com',
@@ -46,6 +199,7 @@ const userData = {
 		},
 		{
 			title: 'Fullstack Developer',
+			slug: '',
 			company: 'WAO/Freelance',
 			year: '2021',
 			companyLink: 'https://gites-wao.fr',
@@ -64,5 +218,12 @@ const userData = {
 		facebook: 'https://www.facebook.com/LAPI-DEV-107384917848838',
 	},
 };
+
+export const images = [
+	{
+		title: 'ReactJS',
+		image: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png',
+	},
+];
 
 export default userData;

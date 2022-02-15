@@ -69,3 +69,17 @@ export type UserData = {
 		facebook: string;
 	};
 };
+
+export type Project = {
+	project: {
+		title: string;
+		slug: string;
+		description?: string;
+		type?: string;
+		link: string;
+		imgUrl?: string;
+		technos?: string[];
+		descriptionFront?: string[];
+		descriptionBack?: string[];
+	};
+};
