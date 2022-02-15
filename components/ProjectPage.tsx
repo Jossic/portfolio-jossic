@@ -11,11 +11,8 @@ const ProjectPage = () => {
 	);
 	const {
 		title,
-		slug,
 		description,
 		type,
-		link,
-		imgUrl,
 		technos,
 		descriptionBack,
 		descriptionFront,
@@ -29,10 +26,24 @@ const ProjectPage = () => {
 			</div>
 			{/* Grid starts here */}
 			<div className='bg-[#F1F1F1] dark:bg-gray-900'>
-				<div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40'>
-					technos.map(tech => {})
-					{description}
-					{type}
+				<div className='max-w-6xl mx-auto py-20 pb-40'>
+					<h2 className='text-3xl md:text-4xl font-bold text-center md:text-left'>
+						Les technos
+					</h2>
+					<div className='flex flex-1 flex-row flex-wrap mt-8'>
+						{technos.map((tech, index) => (
+							<div className='h-16 w-16 mx-3 my-3' key={index}>
+								<Image
+									src={tech}
+									alt={`techIcon${index}`}
+									height='90'
+									width='90'
+								/>
+							</div>
+						))}
+						{description}
+						{type}
+					</div>
 				</div>
 			</div>
 		</section>

@@ -15,7 +15,8 @@ const AboutMe = () => {
 					<p
 						className='leading-loose text-2xl md:text-4xl font-semibold  mx-4'
 						style={{ lineHeight: '3rem' }}>
-						{userData.about.title}. Je travaille actuellement sur{' '}
+						{userData.about.title}. <br /> Je travaille actuellement
+						sur{' '}
 						<a
 							className='bg-red-500 rounded-md px-2 py-1 text-white'
 							href={userData.about.currentProjectUrl}>
