@@ -9,7 +9,10 @@ const ContactPage = () => {
 					Contact
 				</h1>
 			</div>
-			<div className='bg-[#F1F1F1] dark:bg-gray-900 -mt-4'>
+			<div
+				className='bg-[#F1F1F1
+			
+			] dark:bg-gray-900 -mt-4'>
 				{/* <div className='relative z-10 rounded-md shadow-md bg-[#F1F1F1] dark:bg-gray-900 p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 -mt-4'> */}
 				<div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40'>
 					<div className='md:ml-4 mx-auto'>
