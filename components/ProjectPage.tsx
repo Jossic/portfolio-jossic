@@ -53,9 +53,21 @@ const ProjectPage = ({ project }: Project) => {
 										<Image
 											src={desc.image}
 											alt={`capture${index}`}
-											height='300'
-											width='400'
-											layout='responsive'
+											height={
+												desc.type === 'mobile'
+													? '400'
+													: '300'
+											}
+											width={
+												desc.type === 'mobile'
+													? '200'
+													: '400'
+											}
+											layout={
+												desc.type === 'mobile'
+													? 'intrinsic'
+													: 'responsive'
+											}
 										/>
 									</div>
 								)}

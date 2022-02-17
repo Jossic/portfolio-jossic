@@ -91,6 +91,7 @@ export type Project = {
 };
 
 type Description = {
+	type?: string;
 	image: string;
 	text: string;
 };
