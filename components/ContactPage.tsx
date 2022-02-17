@@ -14,11 +14,11 @@ const ContactPage = () => {
 					<div className='md:ml-4'>
 						<header className=''>
 							<h1 className='text-gray-50 font-semibold text-2xl'>
-								Contacte moi !
+								Contactez moi !
 							</h1>
 							<p className='font-light text-base text-gray-200 mt-2'>
-								Rempli le formulaire et je reviendrais <br />{' '}
-								vers toi dès que possible
+								Remplissez le formulaire et je reviendrais{' '}
+								<br /> vers vous dès que possible
 							</p>
 						</header>
 						<div className='icons-container inline-flex flex-col my-20'>
@@ -110,7 +110,7 @@ const ContactPage = () => {
 							htmlFor='name'
 							className='text-sm text-gray-600 mx-4'>
 							{' '}
-							Ton nom
+							Nom
 						</label>
 						<input
 							type='text'
