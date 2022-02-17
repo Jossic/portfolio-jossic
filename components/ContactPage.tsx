@@ -72,11 +72,11 @@ const ContactPage = () => {
 						<div className='social-icons flex flex-row space-x-8'>
 							<a
 								href={userData.socialLinks.facebook}
-								className='h-10 w-10 dark:bg-gray-800 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer'>
+								className='h-10 w-10 bg-gray-200 dark:bg-gray-800 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer'>
 								<svg
 									width='24'
 									height='24'
-									className='text-gray-50'
+									className='text-gray-800  dark:text-gray-50'
 									viewBox='0 0 24 24'
 									fill='none'
 									xmlns='http://www.w3.org/2000/svg'>
@@ -88,11 +88,11 @@ const ContactPage = () => {
 							</a>
 							<a
 								href={userData.socialLinks.twitter}
-								className='h-10 w-10 dark:bg-gray-800 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer'>
+								className='h-10 w-10 bg-gray-200 dark:bg-gray-800 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer'>
 								<svg
 									width='24'
 									height='24'
-									className='text-gray-50'
+									className='text-gray-800  dark:text-gray-50'
 									viewBox='0 0 24 24'
 									fill='none'
 									xmlns='http://www.w3.org/2000/svg'>
