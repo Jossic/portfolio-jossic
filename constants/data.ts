@@ -400,8 +400,8 @@ const userData = {
 		{
 			title: 'Fullstack Developer',
 			slug: '',
-			company: 'WAO/Freelance',
-			year: '2021',
+			company: 'WAO/Freelance (2 ans)',
+			year: '2020/2022',
 			companyLink: 'https://gites-wao.fr',
 			desc: `Creation de l'application web compléte, API et front, réalisé en NextJs pour l'aspect SEO`,
 		},
