@@ -1,13 +1,3 @@
-// JS : https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png
-// TS: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png
-// REACT: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png
-// FIREBASE: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png
-// MONGO: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png
-// NEXT: /nextjs.png
-// Node: /nodejs.png
-// React N : /react-native.svg
-// Redux : /redux.svg
-
 const userData = {
 	githubUsername: 'Jossic',
 	name: 'Jossic Lapierre',
@@ -342,40 +332,9 @@ const userData = {
 				],
 			},
 		},
-		// {
-		// 	title: 'DevConnector',
-		// 	slug: 'devconnector',
-		// 	description: `Petite application réseau social`,
-		// 	type: `Web App`,
-		// 	link: `/projects/devconnector`,
-		// 	imgUrl: '/placeholdertech.png',
-		// 	technos: [
-		// 		`https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png`,
-		// 		'ReactJS',
-		// 		'NodeJS',
-		// 	],
-		// 	descriptionFront: {
-		// 		title: `Front app: Site vitrine et back office pour une app de gestion locative`,
-		// 		description: [
-		// 			{
-		// 				image: ``,
-		// 				text: `Construire une application entière avec Next.js et Material-ui.`,
-		// 			},
-		// 		],
-		// 	},
-		// 	descriptionBack: {
-		// 		title: `API app`,
-		// 		description: [
-		// 			{
-		// 				image: ``,
-		// 				text: `Construire une API complète, avec Express / Mongo DB.`,
-		// 			},
-		// 		],
-		// 	},
-		// },
 	],
 	about: {
-		title: "Ancien comptable reconverti, je me suis pris de passion pour le code. Je ne cesse d'apprendre et de me perfectionner par la pratique au quotidien",
+		title: "Ancien comptable reconverti, je me suis pris de passion pour le code. Je continue de me former en permanence en pratiquant. Je m’intéresse également beaucoup à tout ce qui est lié au Software Craftmanship en général et à la qualité de code, car coder c’est bien, mais bien coder c’est mieux.",
 		description: [
 			`J'ai suivi un DUT informatique en 2007-2009 pour lequel je n'ai pas passé l'examen car je manquait de maturité et souhaitais travailler. J'ai donc travaillé en tant que vendeur et commercial pendant quelques années, puis, je me suis retrouvé au chômage`,
 			`Pôle Emploi m'a fait passé des tests d'intérêts psychologiques qui m'ont orienté vers la comptabilité, j'ai donc repris mes études (bac+2 puis bac+3) et ai commencé à travaillé en tant qu'assistant comptable, puis je suis très vite passé comptable. Seulement, j'ai rapidement fais le tour du métier, et j'étais frustré de n'avoir besoin d'aucune créativité, aucune liberté`,
@@ -390,28 +349,35 @@ const userData = {
 	},
 	experience: [
 		{
-			title: 'Mobile Developer',
+			title: 'Software Engineer',
 			slug: '',
-			company: 'Freelance',
-			year: '2022',
-			companyLink: 'https://lapi-dev.com',
-			desc: `Creation d'une app mobile pour le suivi sportif`,
+			company: 'Marvin, Freelance',
+			year: 'juin 2022 à dec 2022',
+			companyLink: 'https://marvin-bot.com/',
+			desc: `Développement de features pour la création d'un robot de gestion de bien immobilier.`,
+		},
+		{
+			title: 'Frontend Developer',
+			slug: '',
+			company: 'Organigram.io, Freelance',
+			year: 'mars 2022 à mai 2022',
+			companyLink: 'https://organigram.io/',
+			desc: `Réalisation de test E2E pour une application de gestion d'organigrammes déployés sur la blockchain.`,
 		},
 		{
 			title: 'Fullstack Developer',
 			slug: '',
-			company: 'WAO/Freelance (2 ans)',
-			year: '2020/2022',
+			company: 'WAO, Freelance',
+			year: 'fev. 2020 à fev. 2022',
 			companyLink: 'https://gites-wao.fr',
-			desc: `Creation de l'application web compléte, API et front, réalisé en NextJs pour l'aspect SEO`,
+			desc: `Creation de l'application web compléte, API, front et asministration.`,
 		},
 	],
 	resumeUrlFR:
-		'https://drive.google.com/file/d/1b2d3HKQJtYs0MJ2tixZv_ZDmeefoGKxa/view?usp=sharing',
+		'https://drive.google.com/file/d/12wFXDGanvwdzG1Kw9e4zz4lCFJSLHtrP/view?usp=share_link',
 	resumeUrlEN:
 		'https://drive.google.com/file/d/1pFZyao6AMLYM0JknlN-xEqnaWNzj8j9l/view?usp=sharing',
 	socialLinks: {
-		// instagram: 'https://instagram.com/jossic',
 		twitter: 'https://twitter.com/LapierreJossic',
 		linkedin: 'https://linkedin.com/in/jossic',
 		github: 'https://github.com/jossic',
