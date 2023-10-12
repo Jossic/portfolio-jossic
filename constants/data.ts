@@ -377,8 +377,8 @@ const userData = {
 			`Depuis, je continue de pratiquer au quotidien, sur des projets personnels, actuellement je travaille sur une app React-Native.`,
 			`Je suis très sensible aux bonnes pratiques de code, à la qualité de celui-ci, je m'intéresse à tout ce qui à trait à cela (clean code, principes SOLID, design patterns, TDD) et essai d'appliquer au maximum ces principes sur mes projets tout en ajoutant typescript pour renforcer la qualité.`,
 		],
-		currentProject: 'simple-workout',
-		currentProjectUrl: 'https://github.com/Jossic/simple-workout-frontend',
+		currentProject: 'gites-wao-v2',
+		currentProjectUrl: '/projects/gites-wao-v2',
 	},
 	experience: [
 		{
