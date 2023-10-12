@@ -8,9 +8,42 @@ const userData = {
 	address: 'Reims, Grand Est, France',
 	projects: [
 		{
+			title: 'Les gîtes WAO V2',
+			slug: 'gites-wao-v2',
+			description: `Réalisation d'une app fullstack`,
+			type: `Web App`,
+			link: `/projects/gites-wao-v2`,
+			imgUrl: '/refacto-wao.png',
+			technos: [
+				`https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png`,
+				'/nextjs.png',
+				'/nodejs.png',
+			],
+			descriptionFront: {
+				title: `Front app: Refacto du back office pour une app de gestion locative`,
+				description: [
+					{
+						image: `/refacto-wao.png`,
+						text: `Construire une application entière avec Next.js et tailwindcss en clean architecture.`,
+					},
+
+				],
+			},
+			descriptionBack: {
+				title: `API app`,
+				description: [
+					{
+						image: ``,
+						text: `Construire une API complète en clean architecture`,
+					},
+
+				],
+			},
+		},
+		{
 			title: 'Les gîtes WAO',
 			slug: 'gites-wao',
-			description: `Réalisation d'un app fullstack`,
+			description: `Réalisation d'une app fullstack`,
 			type: `Web App`,
 			link: `/projects/gites-wao`,
 			imgUrl: '/backoffice.png',
@@ -349,12 +382,28 @@ const userData = {
 	},
 	experience: [
 		{
+			title: 'Fullstack developer',
+			slug: '',
+			company: 'Legitbee, CDI/Freelance',
+			year: 'Fev 2023 à Oct 2023',
+			companyLink: 'https://legitbee.com/',
+			desc: `Développement et mise à jour de features pour la création d'un Saas qui permet d'enregistrer le patrimoine pour faciliter la transmission.`,
+		},
+		{
+			title: 'Fullstack developer',
+			slug: '',
+			company: 'Repozen, Freelance',
+			year: 'Dec 2022 à Mar 2023',
+			companyLink: 'https://repozen.fr/',
+			desc: `Développement et mise à jour de features pour la création d'une app de service à la personne.`,
+		},
+		{
 			title: 'Software Engineer',
 			slug: '',
 			company: 'Marvin, Freelance',
 			year: 'juin 2022 à dec 2022',
 			companyLink: 'https://marvin-bot.com/',
-			desc: `Développement de features pour la création d'un robot de gestion de bien immobilier.`,
+			desc: `Développement de features pour la création d'un robot (SaaS) de gestion de bien immobilier.`,
 		},
 		{
 			title: 'Frontend Developer',
@@ -374,9 +423,9 @@ const userData = {
 		},
 	],
 	resumeUrlFR:
-		'https://drive.google.com/file/d/12wFXDGanvwdzG1Kw9e4zz4lCFJSLHtrP/view?usp=share_link',
+		'https://drive.google.com/file/d/1Ay6KwcJ0S4LS8xGKUjVZdHjamYfyspev/view?usp=drive_link',
 	resumeUrlEN:
-		'https://drive.google.com/file/d/1pFZyao6AMLYM0JknlN-xEqnaWNzj8j9l/view?usp=sharing',
+		'https://drive.google.com/file/d/1Ay6KwcJ0S4LS8xGKUjVZdHjamYfyspev/view?usp=drive_link',
 	socialLinks: {
 		twitter: 'https://twitter.com/LapierreJossic',
 		linkedin: 'https://linkedin.com/in/jossic',
